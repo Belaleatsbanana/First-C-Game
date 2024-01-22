@@ -157,10 +157,7 @@ void Game::spawnEnemy()
 
 	m_lastEnemySpawnTime = m_currentFrame;
 }
-void Game::spawnSmallEnemies(std::shared_ptr<Entity> e)
-{
 
-}
 void Game::spawnBullet(std::shared_ptr<Entity> entity, const Vec2& target)
 {
 	auto b = m_entities.addEntity("bullet");
@@ -174,10 +171,7 @@ void Game::spawnBullet(std::shared_ptr<Entity> entity, const Vec2& target)
 	b->cShape = std::make_shared<CShape>(10.0f, 20, sf::Color(0, 0, 255), sf::Color(0, 255, 0), 2.0f);
 	b->cLifespan = std::make_shared<CLifespan>(30);
 }
-void Game::spawnSpecialWeapon(std::shared_ptr<Entity> entity)
-{
 
-}
 void Game::sMovement()
 {
 	const float windowWidth = m_window.getSize().x;
